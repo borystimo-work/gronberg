@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<style data-fls-preloader="true" rel="preload">
+		<style data-fls-preloader="false" rel="preload">
 			body>*:not(.fls-preloader) {
       opacity: 0;
       visibility: hidden;
@@ -18,8 +18,8 @@
 		<link rel="preload" href="./assets/fonts/ClashDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1768833604216"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1768833604216">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1770564612966"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1770564612966">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -49,17 +49,6 @@
 									</ul>
 								</div>
 								<div data-fls-copy="" class="copy">
-									<div class="copy__author">
-										<div>
-											© Made by
-											<span>Pawel Gola</span>
-										</div>
-										<div class="copy__line"></div>
-										<div>
-											Powered by
-											<span>Webflow</span>
-										</div>
-									</div>
 									<ul class="copy__social">
 										<li class="copy__item">
 											<a href="https://x.com/" target="_blank" class="copy__link">Twitter</a>
@@ -74,7 +63,7 @@
 								</div>
 							</div>
 						</nav>
-						<button type="button" data-fls-menu="" class="icon-menu">
+						<button aria-label="burger menu" type="button" data-fls-menu="" class="icon-menu">
 							<span></span>
 							<small></small>
 						</button>
@@ -82,6 +71,7 @@
 				</div>
 			</header>
 			<main class="page page--home">
+				<!-- hero -->
 				<section class="page__hero hero">
 					<div class="hero__container">
 						<div class="hero__top">
@@ -99,7 +89,7 @@
 									<div class="jacob-hero__avatar">
 										<div class="jacob-hero__picture">
 											<picture>
-												<img class="jacob-hero__image" alt="Image" src="./assets/img/hero/taylor-hernandez.webp">
+												<img loading="lazy" class="jacob-hero__image" alt="taylor-hernandez" src="./assets/img/hero/taylor-hernandez.webp">
 											</picture>
 										</div>
 										<div class="jacob-hero__text">Hi, Im Jacob</div>
@@ -118,7 +108,7 @@
 								<div data-fls-watcher="" data-fls-watcher-once="" class="hero__picture">
 									<picture>
 										<source media="(max-width: 600px)" srcset="./assets/img/hero/sergey-vinogradov-600.webp" type="image/webp">
-										<img class="hero__image" alt="Image" src="./assets/img/hero/sergey-vinogradov.webp">
+										<img loading="lazy" class="hero__image" alt="sergey-vinogradov" src="./assets/img/hero/sergey-vinogradov.webp">
 									</picture>
 								</div>
 								<a data-fls-scrollto="#services-hero" href="#services-hero" data-fls-button="" class="button button--text button--arrow-88">
@@ -165,7 +155,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- ========================================================================================================= -->
+				<!-- selected-work -->
 				<section class="page__selected-work selected-work">
 					<div class="selected-work__container">
 						<div data-fls-headbutton="" class="headbutton">
@@ -192,7 +182,7 @@
 									<a href="project-white.html" class="project-item__picture">
 										<picture>
 											<source media="(max-width: 600px)" srcset="./assets/img/hero/sergey-vinogradov-600.webp" type="image/webp">
-											<img class="project-item__image" alt="Image" src="./assets/img/hero/sergey-vinogradov.webp">
+											<img class="project-item__image" alt="portrait" src="./assets/img/hero/sergey-vinogradov.webp">
 										</picture>
 									</a>
 									<div class="project-item__info">
@@ -209,7 +199,7 @@
 									</h3>
 									<a href="project-fashion.html" class="project-item__picture">
 										<picture>
-											<img loading="lazy" class="project-item__image" alt="Image" src="./assets/img/projects/weekfashion.webp">
+											<img loading="lazy" class="project-item__image" alt="portrait" src="./assets/img/projects/weekfashion.webp">
 										</picture>
 									</a>
 									<div class="project-item__info">
@@ -228,7 +218,7 @@
 									</h3>
 									<a href="project-style.html" class="project-item__picture">
 										<picture>
-											<img loading="lazy" class="project-item__image" alt="Image" src="./assets/img/projects/style.webp">
+											<img loading="lazy" class="project-item__image" alt="portrait" src="./assets/img/projects/style.webp">
 										</picture>
 									</a>
 									<div class="project-item__info">
@@ -245,7 +235,7 @@
 									</h3>
 									<a href="project-eye.html" class="project-item__picture">
 										<picture>
-											<img loading="lazy" class="project-item__image" alt="Image" src="./assets/img/projects/oneeye.webp">
+											<img loading="lazy" class="project-item__image" alt="portrait" src="./assets/img/projects/oneeye.webp">
 										</picture>
 									</a>
 									<div class="project-item__info">
@@ -257,7 +247,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- ========================================================================================================= -->
+				<!-- exhibitions-22 -->
 				<section class="page__exhibitions-22 exhibitions-22">
 					<div class="exhibitions-22__container">
 						<div data-fls-headbutton="" class="headbutton">
@@ -277,7 +267,7 @@
 								<div class="exhibition-item__body">
 									<a href="beauty.html" class="exhibition-item__picture">
 										<picture>
-											<img loading="lazy" class="exhibition-item__image" alt="Image" src="./assets/img/exhibitions/beauty.webp">
+											<img loading="lazy" class="exhibition-item__image" alt="author" src="./assets/img/exhibitions/beauty.webp">
 										</picture>
 									</a>
 									<div class="exhibition-item__inner inner-exhibition-item">
@@ -314,7 +304,7 @@
 								<div class="exhibition-item__body">
 									<a href="trust.html" class="exhibition-item__picture">
 										<picture>
-											<img loading="lazy" class="exhibition-item__image" alt="Image" src="./assets/img/exhibitions/trust.webp">
+											<img loading="lazy" class="exhibition-item__image" alt="author" src="./assets/img/exhibitions/trust.webp">
 										</picture>
 									</a>
 									<div class="exhibition-item__inner inner-exhibition-item">
@@ -351,7 +341,7 @@
 								<div class="exhibition-item__body">
 									<a href="night.html" class="exhibition-item__picture">
 										<picture>
-											<img loading="lazy" class="exhibition-item__image" alt="Image" src="./assets/img/exhibitions/night.webp">
+											<img loading="lazy" class="exhibition-item__image" alt="author" src="./assets/img/exhibitions/night.webp">
 										</picture>
 									</a>
 									<div class="exhibition-item__inner inner-exhibition-item">
@@ -387,7 +377,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- ========================================================================================================= -->
+				<!-- testimonials -->
 				<section class="page__testimonials testimonials">
 					<div class="testimonials__container">
 						<div data-fls-headerblock="" data-fls-watcher="" data-fls-watcher-once="" class="testimonials__header-block header-block">
@@ -413,7 +403,7 @@
 							<article data-fls-testimonailitem="" data-fls-watcher="" data-fls-watcher-once="" class="testimonial-item">
 								<div class="testimonial-item__picture">
 									<picture>
-										<img loading="lazy" class="testimonial-item__image" alt="Michelle Lindstrøm" src="./assets/img/testimonials/michelle.webp">
+										<img loading="lazy" class="testimonial-item__image" alt="user avatar" src="./assets/img/testimonials/michelle.webp">
 									</picture>
 								</div>
 								<div class="testimonial-item__content">
@@ -435,7 +425,7 @@
 							<article data-fls-testimonailitem="" data-fls-watcher="" data-fls-watcher-once="" class="testimonial-item">
 								<div class="testimonial-item__picture">
 									<picture>
-										<img loading="lazy" class="testimonial-item__image" alt="Michelle Lindstrøm" src="./assets/img/testimonials/jannis.webp">
+										<img loading="lazy" class="testimonial-item__image" alt="user avatar" src="./assets/img/testimonials/jannis.webp">
 									</picture>
 								</div>
 								<div class="testimonial-item__content">
@@ -454,7 +444,7 @@
 							<article data-fls-testimonailitem="" data-fls-watcher="" data-fls-watcher-once="" class="testimonial-item">
 								<div class="testimonial-item__picture">
 									<picture>
-										<img loading="lazy" class="testimonial-item__image" alt="Michelle Lindstrøm" src="./assets/img/testimonials/daniela.webp">
+										<img loading="lazy" class="testimonial-item__image" alt="user avatar" src="./assets/img/testimonials/daniela.webp">
 									</picture>
 								</div>
 								<div class="testimonial-item__content">
@@ -473,7 +463,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- ========================================================================================================= -->
+				<!-- bottom -->
 				<div data-fls-bottom="" class="bottom">
 					<a href="contact.html" data-fls-buttontouch="" data-fls-watcher="" data-fls-watcher-once="" class="buttontouch">
 						<span>
@@ -486,10 +476,6 @@
 						<span class="bottom__span">Together</span>
 					</h2>
 				</div>
-				<!-- ========================================================================================================= -->
-				<!-- ========================================================================================================= -->
-				<!-- ========================================================================================================= -->
-				<!-- ========================================================================================================= -->
 			</main>
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container">
@@ -555,17 +541,6 @@
 					</div>
 					<div class="footer__bottom">
 						<div data-fls-copy="" class="copy">
-							<div class="copy__author">
-								<div>
-									© Made by
-									<span>Pawel Gola</span>
-								</div>
-								<div class="copy__line"></div>
-								<div>
-									Powered by
-									<span>Webflow</span>
-								</div>
-							</div>
 							<ul class="copy__social">
 								<li class="copy__item">
 									<a href="https://x.com/" target="_blank" class="copy__link">Twitter</a>
